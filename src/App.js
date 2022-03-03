@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import PageOne from "./pages/PageOne";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Sidebar />
         <Routes>
           <Route path="/" exact component={Home} />
           <Route path="/PageOne" component={PageOne} />
