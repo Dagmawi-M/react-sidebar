@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Sidebar />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/PageOne" component={PageOne} />
-          <Route path="/PageTwo" component={PageTwo} />
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/PageOne" element={<PageOne/>} />
+          <Route path="/PageTwo" element={<PageTwo/>} />
         </Routes>
       </Router>
     </div>
